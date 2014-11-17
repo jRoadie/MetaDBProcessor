@@ -2,6 +2,10 @@ package com.campus.metadbprocessor
 
 class Overview {
 
-    static constraints = {
+    String content
+
+    static mapping = {
+        version false
+        id column: "OverviewID"
     }
 }

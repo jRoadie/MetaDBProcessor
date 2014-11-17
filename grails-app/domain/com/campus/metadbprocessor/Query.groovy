@@ -2,6 +2,16 @@ package com.campus.metadbprocessor
 
 class Query {
 
-    static constraints = {
+    String description
+    String dataSource
+    //String SQL
+    String processorClass
+    String clazz
+    Boolean isActive
+    Integer oca
+
+    static mapping = {
+        version false
+        id column: "QueryID"
     }
 }

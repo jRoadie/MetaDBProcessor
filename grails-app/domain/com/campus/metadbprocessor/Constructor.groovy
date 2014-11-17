@@ -2,6 +2,14 @@ package com.campus.metadbprocessor
 
 class Constructor {
 
-    static constraints = {
+    String name
+    String description
+    String clazz
+    Boolean isActive
+    Integer oca
+
+    static mapping = {
+        version false
+        id column: 'ConstructorID'
     }
 }

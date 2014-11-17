@@ -12,10 +12,7 @@ class Service {
 
     static mapping = {
         version false
-        id column: 'ServiceID'
+        id column: "ServiceID"
     }
 
-    static constraints = {
-
-    }
 }
