@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<singleton class="net.campusops.bizobject.bo.SimpleBizObject" interface="net.campusops.bizobject.BizObject">
+    <constructor>
+        <string value="PageInstance" />
+        <string value="OA_PageInstance" />
+        <string value="DefaultDataSource" />
+    </constructor>
+    <methods>
+        <method name="setPrimaryKey">
+            <list>
+                <string value="ID" />
+            </list>
+        </method>
+        <method name="setAutoKey">
+            <string value="ID" />
+        </method>
+        <method name="addProperty">
+            <list>
+                <BOPropertyXML boName="PageInstance" property="ID" column="ID" javaType="java.lang.Integer" size="11" isNullable="false" />
+                <BOPropertyXML boName="PageInstance" property="PageID" column="PageID" javaType="java.lang.String" size="20" isNullable="false" />
+                <BOPropertyXML boName="PageInstance" property="UserInstanceID" column="UserInstanceID" javaType="java.lang.Integer" size="11" isNullable="false" />
+                <BOPropertyXML boName="PageInstance" property="PageName" column="PageName" javaType="java.lang.String" size="500" isNullable="true" />
+                <BOPropertyXML boName="PageInstance" property="Label" column="Label" javaType="java.lang.String" size="500" isNullable="true" />
+                <BOPropertyXML boName="PageInstance" property="PageType" column="PageType" javaType="java.lang.String" size="500" isNullable="true" />
+                <BOPropertyXML boName="PageInstance" property="Tags" column="Tags" javaType="java.lang.String" size="500" isNullable="true" />
+                <BOPropertyXML boName="PageInstance" property="Class" column="Class" javaType="java.lang.String" size="500" isNullable="true" />
+                <BOPropertyXML boName="PageInstance" property="Hidden" column="Hidden" javaType="java.lang.Boolean" size="" isNullable="true" />
+                <BOPropertyXML boName="PageInstance" property="ReadOnly" column="ReadOnly" javaType="java.lang.Boolean" size="" isNullable="true" />
+                <BOPropertyXML boName="PageInstance" property="Tabindex" column="Tabindex" javaType="java.lang.Integer" size="11" isNullable="true" />
+                <BOPropertyXML boName="PageInstance" property="Columns" column="PageFragmentColumns" javaType="java.lang.Integer" size="11" isNullable="true" />
+                <BOPropertyXML boName="PageInstance" property="Condition" column="ConditionalStatement" javaType="java.lang.String" size="500" isNullable="true" />
+                <BOPropertyXML boName="PageInstance" property="Style" column="Style" javaType="java.lang.String" size="500" isNullable="true" />
+                <BOPropertyXML boName="PageInstance" property="Overview" column="Overview" javaType="java.lang.String" size="500" isNullable="true" />
+				<BOPropertyXML boName="PageInstance" property="Instructions" column="Instructions" javaType="java.lang.String" size="4000" isNullable="true" />
+				<BOPropertyXML boName="PageInstance" property="PixelTracking" column="PixelTracking" javaType="java.lang.String" size="" isNullable="true" />
+                <BOPropertyXML boName="PageInstance" property="StatusID" column="StatusID" javaType="java.lang.Integer" size="11" isNullable="true" />
+                <BOPropertyXML boName="PageInstance" property="StatusDate" column="StatusDate" javaType="java.util.Date" size="" isNullable="true" />
+				<BOPropertyXML boName="PageInstance" property="IsLocked" column="IsLocked" javaType="java.lang.Boolean" size="" isNullable="true" />
+            </list>
+        </method>
+    </methods>
+</singleton>

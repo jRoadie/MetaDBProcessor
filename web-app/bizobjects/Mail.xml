@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<singleton class="net.campusops.bizobject.bo.SimpleBizObject" interface="net.campusops.bizobject.BizObject">
+    <constructor>
+        <string value="Mail" />
+        <string value="OA_MailLog" />
+        <string value="DefaultDataSource" />
+    </constructor>
+    <methods>
+        <method name="setPrimaryKey">
+            <list>
+                <string value="MailID" />
+            </list>
+        </method>
+        <method name="setAutoKey">
+            <string value="MailID" />
+        </method>
+        <method name="addProperty">
+            <list>
+                <BOPropertyXML boName="Mail" property="MailID" column="MailID" javaType="java.lang.Integer" size="11" isNullable="false" />
+                <BOPropertyXML boName="Mail" property="FromAddress" column="FromAddress" javaType="java.lang.String" size="50" isNullable="true" />
+                <BOPropertyXML boName="Mail" property="ToAddress" column="ToAddress" javaType="java.lang.String" size="50" isNullable="true" />
+                <BOPropertyXML boName="Mail" property="Cc" column="Cc" javaType="java.lang.String" size="500" isNullable="true" />
+                <BOPropertyXML boName="Mail" property="Bcc" column="Bcc" javaType="java.lang.String" size="500" isNullable="true" />
+                <BOPropertyXML boName="Mail" property="MailSubject" column="MailSubject" javaType="java.lang.String" size="200" isNullable="true" />
+                <BOPropertyXML boName="Mail" property="MailBody" column="MailBody" javaType="java.lang.String" size="2000" isNullable="true" />
+                <BOPropertyXML boName="Mail" property="MailHtml" column="MailHtml" javaType="java.lang.Integer" size="2000" isNullable="true" />
+                <BOPropertyXML boName="Mail" property="Attachments" column="Attachments" javaType="java.lang.String" size="1000" isNullable="true" />
+                <BOPropertyXML boName="Mail" property="Sent" column="Sent" javaType="java.util.Date" size="" isNullable="true" />
+                <BOPropertyXML boName="Mail" property="Status" column="Status" javaType="java.lang.Integer" size="11" isNullable="true" />
+            </list>
+        </method>
+    </methods>
+</singleton>

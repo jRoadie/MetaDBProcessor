@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<singleton class="net.campusops.bizobject.bo.SimpleBizObject" interface="net.campusops.bizobject.BizObject">
+    <constructor>
+        <string value="Requirement" />
+        <string value="OA_Requirement" />
+        <string value="DefaultDataSource" />
+    </constructor>
+    <methods>
+        <method name="setPrimaryKey">
+            <list>
+                <string value="ID" />
+            </list>
+        </method>
+        <method name="setAutoKey">
+            <string value="ID" />
+        </method>
+        <method name="addProperty">
+            <list>
+                <BOPropertyXML boName="Requirement"
+                               property="ID" column="ID"
+                               javaType="java.lang.Integer" size="11" isNullable="false"/>
+
+                <BOPropertyXML boName="Requirement"
+                               property="RequirementID" column="RequirementID"
+                               javaType="java.lang.String" size="256" isNullable="false"/>
+
+                <BOPropertyXML boName="Requirement"
+                               property="Name" column="Name"
+                               javaType="java.lang.String" size="512" isNullable="true"/>
+
+                <BOPropertyXML boName="Requirement"
+                               property="Link" column="Link"
+                               javaType="java.lang.String" size="512" isNullable="true"/>
+                <BOPropertyXML boName="Requirement"
+                               property="Comment" column="Comment"
+                               javaType="java.lang.String" size="512" isNullable="true"/>
+
+                <BOPropertyXML boName="Requirement"
+                               property="CreationDate" column="CreationDate"
+                               javaType="java.util.Date" size="19" isNullable="true"/>
+
+                <BOPropertyXML boName="Requirement"
+                               property="IsActive" column="IsActive"
+                               javaType="java.lang.Boolean" size="1" isNullable="true"/>
+
+                <BOPropertyXML boName="Requirement"
+                               property="UserInstanceID" column="UserInstanceID"
+                               javaType="java.lang.Integer" size="11" isNullable="true"/>
+            </list>
+        </method>
+    </methods>
+</singleton>

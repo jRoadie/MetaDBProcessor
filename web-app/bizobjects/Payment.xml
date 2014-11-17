@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<singleton class="net.campusops.bizobject.bo.SimpleBizObject" interface="net.campusops.bizobject.BizObject">
+    <constructor>
+        <string value="Payment" />
+        <string value="OPG_Payment"/>
+        <string value="PaymentDataSource" />
+    </constructor>
+    <methods>
+        <method name="setPrimaryKey">
+            <list>
+                <string value="PaymentID" />
+            </list>
+        </method>
+        <method name="setAutoKey">
+            <string value="PaymentID" />
+        </method>
+        <method name="addProperty">
+            <list>
+	      <BOPropertyXML boName="Payment" property="PaymentID" column="PaymentID" javaType="java.lang.Integer" size="11" isNullable="false"/>
+	      <BOPropertyXML boName="Payment" property="CreateDate" column="CreateDate" javaType="java.util.Date" size="23" isNullable="false"/>
+	      <BOPropertyXML boName="Payment" property="ClientID" column="ClientID" javaType="java.lang.String" size="11" isNullable="false"/>
+	      <BOPropertyXML boName="Payment" property="PaymentGatewayAccountID" column="PaymentGatewayAccountID" javaType="java.lang.Integer" size="11" isNullable="false"/>
+	      <BOPropertyXML boName="Payment" property="PaymentStatusID" column="PaymentStatusID" javaType="java.lang.Integer" size="11" isNullable="false"/>
+	      <BOPropertyXML boName="Payment" property="RequestAmount" column="RequestAmount" javaType="java.lang.Double" size="19,4" isNullable="false"/>
+	      <BOPropertyXML boName="Payment" property="SuccessCallbackUrl" column="SuccessCallbackUrl" javaType="java.lang.String" size="1000" isNullable="false"/>
+	      <BOPropertyXML boName="Payment" property="FailureCallbackUrl" column="FailureCallbackUrl" javaType="java.lang.String" size="1000" isNullable="false"/>
+	      <BOPropertyXML boName="Payment" property="PayerID1" column="PayerID1" javaType="java.lang.String" size="255" isNullable="true"/>
+	      <BOPropertyXML boName="Payment" property="PayerID2" column="PayerID2" javaType="java.lang.String" size="255" isNullable="true"/>
+	      <BOPropertyXML boName="Payment" property="PayerFirstName" column="PayerFirstName" javaType="java.lang.String" size="255" isNullable="true"/>
+	      <BOPropertyXML boName="Payment" property="PayerLastName" column="PayerLastName" javaType="java.lang.String" size="255" isNullable="true"/>
+	      <BOPropertyXML boName="Payment" property="PayerFullName" column="PayerFullName" javaType="java.lang.String" size="255" isNullable="true"/>
+	      <BOPropertyXML boName="Payment" property="PayerEmail" column="PayerEmail" javaType="java.lang.String" size="255" isNullable="true"/>
+	      <BOPropertyXML boName="Payment" property="PayerTelephone" column="PayerTelephone" javaType="java.lang.String" size="255" isNullable="true"/>
+	      <BOPropertyXML boName="Payment" property="PayerAddress1" column="PayerAddress1" javaType="java.lang.String" size="255" isNullable="true"/>
+	      <BOPropertyXML boName="Payment" property="PayerAddress2" column="PayerAddress2" javaType="java.lang.String" size="255" isNullable="true"/>
+	      <BOPropertyXML boName="Payment" property="PayerCity" column="PayerCity" javaType="java.lang.String" size="255" isNullable="true"/>
+	      <BOPropertyXML boName="Payment" property="PayerState" column="PayerState" javaType="java.lang.String" size="255" isNullable="true"/>
+	      <BOPropertyXML boName="Payment" property="PayerCountry" column="PayerCountry" javaType="java.lang.String" size="255" isNullable="true"/>
+	      <BOPropertyXML boName="Payment" property="PayerPostalCode" column="PayerPostalCode" javaType="java.lang.String" size="255" isNullable="true"/>
+	      <BOPropertyXML boName="Payment" property="TransactionNo" column="TransactionNo" javaType="java.lang.String" size="50" isNullable="true"/>
+	      <BOPropertyXML boName="Payment" property="TransactionDate" column="TransactionDate" javaType="java.lang.String" size="30" isNullable="true"/>
+	      <BOPropertyXML boName="Payment" property="TransactionStatus" column="TransactionStatus" javaType="java.lang.String" size="50" isNullable="true"/>
+	      <BOPropertyXML boName="Payment" property="TransactionAmount" column="TransactionAmount" javaType="java.lang.Double" size="19,4" isNullable="true"/>
+	      <BOPropertyXML boName="Payment" property="AuthorizationCode" column="AuthorizationCode" javaType="java.lang.String" size="50" isNullable="true"/>
+	      <BOPropertyXML boName="Payment" property="BillingName" column="BillingName" javaType="java.lang.String" size="255" isNullable="true"/>
+	      <BOPropertyXML boName="Payment" property="BillingStreet" column="BillingStreet" javaType="java.lang.String" size="255" isNullable="true"/>
+	      <BOPropertyXML boName="Payment" property="BillingCity" column="BillingCity" javaType="java.lang.String" size="255" isNullable="true"/>
+	      <BOPropertyXML boName="Payment" property="BillingState" column="BillingState" javaType="java.lang.String" size="255" isNullable="true"/>
+	      <BOPropertyXML boName="Payment" property="BillingCountry" column="BillingCountry" javaType="java.lang.String" size="255" isNullable="true"/>
+	      <BOPropertyXML boName="Payment" property="BillingPostalCode" column="BillingPostalCode" javaType="java.lang.String" size="255" isNullable="true"/>
+	      <BOPropertyXML boName="Payment" property="BillingEmail" column="BillingEmail" javaType="java.lang.String" size="255" isNullable="true"/>
+	      <BOPropertyXML boName="Payment" property="BillingAccountNo" column="BillingAccountNo" javaType="java.lang.String" size="255" isNullable="true"/>
+	      <BOPropertyXML boName="Payment" property="PaymentType" column="PaymentType" javaType="java.lang.String" size="50" isNullable="true"/>
+	      <BOPropertyXML boName="Payment" property="CreditCardType" column="CreditCardType" javaType="java.lang.String" size="50" isNullable="true"/>
+	      <BOPropertyXML boName="Payment" property="RequestData" column="RequestData" javaType="java.lang.String" size="4000" isNullable="true"/>
+	      <BOPropertyXML boName="Payment" property="ReasonCode" column="ReasonCode" javaType="java.lang.String" size="50" isNullable="true"/>
+	      <BOPropertyXML boName="Payment" property="ReasonDescription" column="ReasonDescription" javaType="java.lang.String" size="2000" isNullable="true"/>
+            </list>
+        </method>
+    </methods>
+</singleton>

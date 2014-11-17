@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<singleton class="net.campusops.bizobject.bo.SimpleBizObject" interface="net.campusops.bizobject.BizObject">
+  <constructor>
+    <string value="UserResponse" />
+    <string value="OA_UserResponse" />
+    <string value="DefaultDataSource" />
+  </constructor>
+  <methods>
+    <method name="setPrimaryKey">
+      <list>
+        <string value="ID" />
+      </list>
+    </method>
+    <method name="setAutoKey">
+      <string value="ID" />
+    </method>
+    <method name="addProperty">
+      <list>
+		<BOPropertyXML boName="UserResponse" property="ID" column="ID" javaType="java.lang.Integer" size="11" isNullable="false" />
+        <BOPropertyXML boName="UserResponse" property="FieldGroupInstanceID" column="FieldGroupInstanceID" javaType="java.lang.Integer" size="11" isNullable="true" />
+        <BOPropertyXML boName="UserResponse" property="ResponseData" column="ResponseData" javaType="java.lang.String" size="" isNullable="true" />
+        <BOPropertyXML boName="UserResponse" property="StatusID" column="StatusID" javaType="java.lang.Integer" size="11" isNullable="true" />
+        <BOPropertyXML boName="UserResponse" property="StatusDate" column="StatusDate" javaType="java.util.Date" size="" isNullable="true" />
+		<BOPropertyXML boName="UserResponse" property="StatusMessage" column="StatusMessage" javaType="java.lang.String" size="" isNullable="true" />
+		<BOPropertyXML boName="UserResponse" property="NudgeOn" column="NudgeOn" javaType="java.lang.Boolean" size="1" isNullable="true" />
+		<BOPropertyXML boName="UserResponse" property="IsDirty" column="IsDirty" javaType="java.lang.Boolean" size="1" isNullable="false" />
+		<BOPropertyXML boName="UserResponse" property="LastUpdateTime" column="LastUpdateTime" javaType="java.util.Date" size="" isNullable="true" />
+		<BOPropertyXML boName="UserResponse" property="oca" column="oca" javaType="java.lang.Integer" size="11" isNullable="false" />
+      </list>
+    </method>
+  </methods>
+</singleton>

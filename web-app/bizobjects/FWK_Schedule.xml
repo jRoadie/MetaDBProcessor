@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bizobject name="FWK_Schedule" status="active" concurrency="oca">
+  <table name="FWK_Schedule" status="active">
+    <columns>
+      <column name="TimerID" type="serial" nullable="false" />
+      <column name="ScheduleName" type="varchar" size="250" nullable="false" />
+      <column name="ScheduledTime" type="long" default="0" nullable="false" />
+      <column name="MinimumRun" type="integer" default="0" nullable="false" />
+      <column name="MaximumRun" type="integer" default="0" nullable="false" />
+      <column name="RunInterval" type="varchar" size="250" nullable="false" />
+      <column name="ExpireTime" type="long" default="0" nullable="false" />
+      <column name="IsPersistent" type="boolean" default="0" nullable="false" />
+      <column name="ServiceName" type="varchar" size="250" nullable="false" />
+      <column name="ServiceParams" type="clob" nullable="true" />
+    </columns>
+    <constraints>
+      <primaryKey name="PK_FWK_Schedule" status="active">
+        <columnRef name="TimerID" />
+      </primaryKey>
+    </constraints>
+  </table>
+  <properties>
+    <databaseProperty name="TimerID" columnRef="TimerID" />
+    <databaseProperty name="ScheduleName" columnRef="ScheduleName" />
+    <databaseProperty name="ScheduledTime" columnRef="ScheduledTime" />
+    <databaseProperty name="MinimumRun" columnRef="MinimumRun" />
+    <databaseProperty name="MaximumRun" columnRef="MaximumRun" />
+    <databaseProperty name="RunInterval" columnRef="RunInterval" />
+    <databaseProperty name="ExpireTime" columnRef="ExpireTime" />
+    <databaseProperty name="IsPersistent" columnRef="IsPersistent" />
+    <databaseProperty name="ServiceName" columnRef="ServiceName" />
+    <databaseProperty name="ServiceParams" columnRef="ServiceParams" />
+  </properties>
+</bizobject>
+

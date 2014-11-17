@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<singleton class="net.campusops.bizobject.bo.SimpleBizObject" interface="net.campusops.bizobject.BizObject">
+  <constructor>
+    <string value="Definition" />
+    <string value="OA_Definition" />
+    <string value="DefaultDataSource" />
+  </constructor>
+  <methods>
+    <method name="setPrimaryKey">
+      <list>
+        <string value="ID" />
+      </list>
+    </method>
+    <method name="setAutoKey">
+      <string value="ID" />
+    </method>
+    <method name="addProperty">
+      <list>
+		<BOPropertyXML boName="Definition" property="ID" column="ID" javaType="java.lang.Integer" size="11" isNullable="false" />
+        <BOPropertyXML boName="Definition" property="DefinitionCode" column="DefinitionCode" javaType="java.lang.String" size="50" isNullable="true" />
+        <BOPropertyXML boName="Definition" property="CurrentPublicationID" column="CurrentPublicationID" javaType="java.lang.Integer" size="11" isNullable="true" />
+		<BOPropertyXML boName="Definition" property="ClientID" column="ClientID" javaType="java.lang.String" size="50" isNullable="true" />
+		<BOPropertyXML boName="Definition" property="oca" column="oca" javaType="java.lang.Integer" size="11" isNullable="false" />
+      </list>
+    </method>
+  </methods>
+</singleton>

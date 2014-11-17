@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<singleton class="net.campusops.bizobject.bo.SimpleBizObject" interface="net.campusops.bizobject.BizObject">
+    <constructor>
+        <string value="RecommendationRequest" />
+        <string value="OA_RecommendationRequest" />
+        <string value="DefaultDataSource" />
+    </constructor>
+    <methods>
+        <method name="setPrimaryKey">
+            <list>
+                <string value="ID" />
+            </list>
+        </method>
+        <method name="setAutoKey">
+            <string value="ID" />
+        </method>
+        <method name="addProperty">
+            <list>
+                <BOPropertyXML boName="RecommendationRequest" 
+							   property="ID" column="ID" 
+							   javaType="java.lang.Integer" size="11" isNullable="false"/>
+                
+				<BOPropertyXML boName="RecommendationRequest" 
+							   property="RequestDate" column="RequestDate" 
+							   javaType="java.util.Date" size="" isNullable="false"/>
+                
+				<BOPropertyXML boName="RecommendationRequest" 
+							   property="RecommenderFirstName" column="RecommenderFirstName" 
+							   javaType="java.lang.String" size="100" isNullable="true"/>
+                
+				<BOPropertyXML boName="RecommendationRequest" 
+							   property="RecommenderLastName" column="RecommenderLastName" 
+							   javaType="java.lang.String" size="100" isNullable="true"/>
+                
+				<BOPropertyXML boName="RecommendationRequest" 
+							   property="RecommenderEmail" column="RecommenderEmail" 
+							   javaType="java.lang.String" size="80" isNullable="true"/>
+                
+				<BOPropertyXML boName="RecommendationRequest" 
+							   property="DefinitionCode" column="DefinitionCode"
+							   javaType="java.lang.String" size="50" isNullable="false"/>
+                
+				<BOPropertyXML boName="RecommendationRequest" 
+							   property="RequesterFirstName" column="RequesterFirstName" 
+							   javaType="java.lang.String" size="100" isNullable="true"/>
+                
+				<BOPropertyXML boName="RecommendationRequest" 
+							   property="RequesterLastName" column="RequesterLastName" 
+							   javaType="java.lang.String" size="100" isNullable="true"/>
+                
+				<BOPropertyXML boName="RecommendationRequest" 
+							   property="RequesterEmail" column="RequesterEmail" 
+							   javaType="java.lang.String" size="80" isNullable="true"/>
+                
+				<BOPropertyXML boName="RecommendationRequest" 
+							   property="UserInstanceID" column="UserInstanceID" 
+							   javaType="java.lang.Integer" size="10" isNullable="true"/>
+                
+				<BOPropertyXML boName="RecommendationRequest" 
+							   property="ClientID" column="ClientID" 
+							   javaType="java.lang.String" size="50" isNullable="true" />
+							   
+			   	<BOPropertyXML boName="RecommendationRequest" 
+                                   			   property="SecurityToken" column="SecurityToken" 
+                                   			   javaType="java.lang.String" size="26" isNullable="false" />
+            </list>
+        </method>
+    </methods>
+</singleton>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<singleton class="net.campusops.bizobject.bo.SimpleBizObject" interface="net.campusops.bizobject.BizObject">
+    <constructor>
+        <string value="FieldInstance" />
+        <string value="OA_FieldInstance" />
+        <string value="DefaultDataSource" />
+    </constructor>
+    <methods>
+        <method name="setPrimaryKey">
+            <list>
+                <string value="ID" />
+            </list>
+        </method>
+        <method name="setAutoKey">
+            <string value="ID" />
+        </method>
+        <method name="addProperty">
+
+            <list>
+                <BOPropertyXML boName="FieldInstance" property="ID" column="ID" javaType="java.lang.Integer" size="11" isNullable="false" />
+                <BOPropertyXML boName="FieldInstance" property="FieldGroupInstanceID" column="FieldGroupInstanceID" javaType="java.lang.Integer" size="11" isNullable="false" />
+                <BOPropertyXML boName="FieldInstance" property="FieldID" column="FieldID" javaType="java.lang.String" size="20" isNullable="false" />
+                <BOPropertyXML boName="FieldInstance" property="FieldName" column="FieldName" javaType="java.lang.String" size="500" isNullable="false" />
+                <BOPropertyXML boName="FieldInstance" property="FieldType" column="FieldType" javaType="java.lang.String" size="500" isNullable="false" />
+                <BOPropertyXML boName="FieldInstance" property="Label" column="Label" javaType="java.lang.String" size="500" isNullable="true" />
+                <BOPropertyXML boName="FieldInstance" property="Tooltip" column="Tooltip" javaType="java.lang.String" size="500" isNullable="true" />
+                <BOPropertyXML boName="FieldInstance" property="Instructions" column="Instructions" javaType="java.lang.String" size="4000" isNullable="true" />
+                <BOPropertyXML boName="FieldInstance" property="Options" column="Options" javaType="java.lang.String" size="500" isNullable="true" />
+                <BOPropertyXML boName="FieldInstance" property="Src" column="Src" javaType="java.lang.String" size="500" isNullable="true" />
+                <BOPropertyXML boName="FieldInstance" property="MinFields" column="MinFields" javaType="java.lang.Integer" size="11" isNullable="true" />
+                <BOPropertyXML boName="FieldInstance" property="MaxFields" column="MaxFields" javaType="java.lang.Integer" size="11" isNullable="true" />
+                <BOPropertyXML boName="FieldInstance" property="Class" column="Class" javaType="java.lang.String" size="500" isNullable="true" />
+                <BOPropertyXML boName="FieldInstance" property="Readonly" column="Readonly" javaType="java.lang.Boolean" size="" isNullable="true" />
+                <BOPropertyXML boName="FieldInstance" property="Hidden" column="Hidden" javaType="java.lang.Boolean" size="" isNullable="true" />
+                <BOPropertyXML boName="FieldInstance" property="TabIndex" column="TabIndex" javaType="java.lang.Integer" size="11" isNullable="true" />
+                <BOPropertyXML boName="FieldInstance" property="Style" column="Style" javaType="java.lang.String" size="50" isNullable="true" />
+                <BOPropertyXML boName="FieldInstance" property="AccessKey" column="AccessKey" javaType="java.lang.String" size="11" isNullable="true" />
+                <BOPropertyXML boName="FieldInstance" property="ImplicitValidation" column="ImplicitValidation" javaType="java.lang.Boolean" size="200" isNullable="true" />
+                <BOPropertyXML boName="FieldInstance" property="IncludeValidation" column="IncludeValidation" javaType="java.lang.String" size="200" isNullable="true" />
+                <BOPropertyXML boName="FieldInstance" property="ExcludeValidation" column="ExcludeValidation" javaType="java.lang.String" size="200" isNullable="true" />
+                <BOPropertyXML boName="FieldInstance" property="Condition" column="ConditionalStatement" javaType="java.lang.String" size="200" isNullable="true" />
+                <BOPropertyXML boName="FieldInstance" property="NewRow" column="NewRow" javaType="java.lang.Boolean" size="" isNullable="true" />
+                <BOPropertyXML boName="FieldInstance" property="Colspan" column="Colspan" javaType="java.lang.Integer" size="11" isNullable="true" />
+                <BOPropertyXML boName="FieldInstance" property="Aging" column="Aging" javaType="java.lang.Integer" size="11" isNullable="true" />
+                <BOPropertyXML boName="FieldInstance" property="Accept" column="Accept" javaType="java.lang.String" size="200" isNullable="true" />
+                <BOPropertyXML boName="FieldInstance" property="Alt" column="Alt" javaType="java.lang.String" size="200" isNullable="true" />
+                <BOPropertyXML boName="FieldInstance" property="AutoComplete" column="Autocomplete" javaType="java.lang.Boolean" size="" isNullable="true" />
+                <BOPropertyXML boName="FieldInstance" property="AutoFocus" column="Autofocus" javaType="java.lang.Boolean" size="" isNullable="true" />
+                <BOPropertyXML boName="FieldInstance" property="Checked" column="Checked" javaType="java.lang.Boolean" size="" isNullable="true" />
+                <BOPropertyXML boName="FieldInstance" property="Max" column="Max" javaType="java.lang.Integer" size="11" isNullable="true" />
+                <BOPropertyXML boName="FieldInstance" property="MaxLength" column="MaxLength" javaType="java.lang.Integer" size="11" isNullable="true" />
+                <BOPropertyXML boName="FieldInstance" property="Min" column="Min" javaType="java.lang.Integer" size="11" isNullable="true" />
+                <BOPropertyXML boName="FieldInstance" property="Pattern" column="Pattern" javaType="java.lang.String" size="100" isNullable="true" />
+                <BOPropertyXML boName="FieldInstance" property="Size" column="Size" javaType="java.lang.Integer" size="11" isNullable="true" />
+                <BOPropertyXML boName="FieldInstance" property="Step" column="Step" javaType="java.lang.String" size="200" isNullable="true" />
+                <BOPropertyXML boName="FieldInstance" property="Value" column="FieldValue" javaType="java.lang.String" size="" isNullable="true" />
+                <BOPropertyXML boName="FieldInstance" property="Width" column="Width" javaType="java.lang.Integer" size="11" isNullable="true" />
+                <BOPropertyXML boName="FieldInstance" property="Height" column="Height" javaType="java.lang.Integer" size="11" isNullable="true" />
+                <BOPropertyXML boName="FieldInstance" property="ValidationMessages" column="ValidationMessages" javaType="java.lang.String" size="500" isNullable="true" />
+           		<BOPropertyXML boName="FieldInstance" property="LookupGroupID" column="LookupGroupID" javaType="java.lang.Integer" size="11" isNullable="true" />
+            </list>
+
+        </method>
+    </methods>
+</singleton>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<singleton class="net.campusops.bizobject.bo.SimpleBizObject" interface="net.campusops.bizobject.BizObject">
+    <constructor>
+        <string value="FieldGroupInstance" />
+        <string value="OA_FieldGroupInstance" />
+        <string value="DefaultDataSource" />
+    </constructor>
+    <methods>
+        <method name="setPrimaryKey">
+            <list>
+                <string value="ID" />
+            </list>
+        </method>
+        <method name="setAutoKey">
+            <string value="ID" />
+        </method>
+        <method name="addProperty">
+
+            <list>
+                <BOPropertyXML boName="FieldGroupInstance" property="ID" column="ID" javaType="java.lang.Integer" size="11" isNullable="false" />
+                <BOPropertyXML boName="FieldGroupInstance" property="PageInstanceID" column="PageInstanceID" javaType="java.lang.Integer" size="11" isNullable="false" />
+                <BOPropertyXML boName="FieldGroupInstance" property="GroupID" column="FieldGroupID" javaType="java.lang.String" size="20" isNullable="false" />
+                <BOPropertyXML boName="FieldGroupInstance" property="GroupName" column="Name" javaType="java.lang.String" size="500" isNullable="true" />
+                <BOPropertyXML boName="FieldGroupInstance" property="Label" column="Label" javaType="java.lang.String" size="500" isNullable="true" />
+                <BOPropertyXML boName="FieldGroupInstance" property="Instructions" column="Instructions" javaType="java.lang.String" size="4000" isNullable="true" />
+                <BOPropertyXML boName="FieldGroupInstance" property="Tags" column="Tags" javaType="java.lang.String" size="500" isNullable="true" />
+                <BOPropertyXML boName="FieldGroupInstance" property="Class" column="Class" javaType="java.lang.String" size="500" isNullable="true" />
+                <BOPropertyXML boName="FieldGroupInstance" property="Hidden" column="Hidden" javaType="java.lang.Boolean" size="" isNullable="true" />
+                <BOPropertyXML boName="FieldGroupInstance" property="Readonly" column="Readonly" javaType="java.lang.Boolean" size="" isNullable="true" />
+                <BOPropertyXML boName="FieldGroupInstance" property="Tabindex" column="Tabindex" javaType="java.lang.Integer" size="11" isNullable="true" />
+                <BOPropertyXML boName="FieldGroupInstance" property="Condition" column="Conditional" javaType="java.lang.String" size="500" isNullable="true" /> 
+                <BOPropertyXML boName="FieldGroupInstance" property="Style" column="Style" javaType="java.lang.String" size="500" isNullable="true" />
+                <BOPropertyXML boName="FieldGroupInstance" property="NewRow" column="NewRow" javaType="java.lang.Boolean" size="" isNullable="true" />
+                <BOPropertyXML boName="FieldGroupInstance" property="MinGroups" column="MinGroups" javaType="java.lang.Integer" size="11" isNullable="true" />
+                <BOPropertyXML boName="FieldGroupInstance" property="MaxGroups" column="MaxGroups" javaType="java.lang.Integer" size="11" isNullable="true" />
+                <BOPropertyXML boName="FieldGroupInstance" property="Colspan" column="Colspan" javaType="java.lang.Integer" size="11" isNullable="true" />
+                <BOPropertyXML boName="FieldGroupInstance" property="Columns" column="FieldGroupColumns" javaType="java.lang.Integer" size="11" isNullable="true" />
+            </list>
+
+        </method>
+    </methods>
+</singleton>

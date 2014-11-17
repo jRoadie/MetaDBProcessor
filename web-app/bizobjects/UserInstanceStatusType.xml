@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<singleton class="net.campusops.bizobject.bo.SimpleBizObject" interface="net.campusops.bizobject.BizObject">
+    <constructor>
+        <string value="UserInstanceStatusType" />
+        <string value="OA_UserInstanceStatusType" />
+        <string value="DefaultDataSource" />
+    </constructor>
+    <methods>
+        <method name="setPrimaryKey">
+            <list>
+                <string value="ID" />
+            </list>
+        </method>
+        <method name="setAutoKey">
+            <string value="ID" />
+        </method>
+        <method name="addProperty">
+            <list>
+                <BOPropertyXML boName="UserInstanceStatusType" property="ID" column="ID" javaType="java.lang.Integer" size="11" isNullable="false" />
+                <BOPropertyXML boName="UserInstanceStatusType" property="Name" column="Name" javaType="java.lang.String" size="50" isNullable="true" />
+                <BOPropertyXML boName="UserInstanceStatusType" property="Description" column="Description" javaType="java.lang.String" size="50" isNullable="true" />
+                <BOPropertyXML boName="UserInstanceStatusType" property="AppliedToRecordType" column="AppliedToRecordType" javaType="java.lang.Integer" size="" isNullable="true" />
+                <BOPropertyXML boName="UserInstanceStatusType" property="LockedStatus" column="LockedStatus" javaType="java.lang.Integer" size="11" isNullable="true" />
+                <BOPropertyXML boName="UserInstanceStatusType" property="IsIntroType" column="IsIntroType" javaType="java.lang.Boolean" size="" isNullable="true" />                
+            </list>
+        </method>
+    </methods>
+</singleton>

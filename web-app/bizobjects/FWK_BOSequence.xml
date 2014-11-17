@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<singleton class="net.jenzabar.bizobject.bo.SimpleBizObject" interface="net.jenzabar.bizobject.BizObject">
+  <constructor>
+    <object class="net.jenzabar.bizobject.bo.PropertyGridImpl" interface="net.jenzabar.bizobject.bo.PropertyGrid">
+      <constructor>
+        <string value="FWK_BOSequence" />
+        <string value="FWK_BOSequence" />
+        <string value="DirectDataSource" />
+        <string value="net.jenzabar.ejb.info.EntityInfoImpl" />
+        <string value="net.jenzabar.ejb.info.EntityInfoImpl" />
+        <string value="net.jenzabar.ejb.info.EntityInfoImpl" />
+        <list>
+          <string value="BOName" />
+        </list>
+        <list>
+          <StringMap property="BOName" column="BOName" javaType="java.lang.String" size="30" nullable="false" />
+          <StringMap property="NextSeqNo" column="NextSeqNo" javaType="java.lang.Integer" size="10" nullable="false" />
+          <StringMap property="oca" column="oca" javaType="java.lang.Integer" size="10" nullable="false" />
+        </list>
+      </constructor>
+      <methods />
+    </object>
+  </constructor>
+</singleton>
+

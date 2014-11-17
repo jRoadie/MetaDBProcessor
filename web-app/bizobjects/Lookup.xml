@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<singleton class="net.campusops.bizobject.bo.SimpleBizObject" interface="net.campusops.bizobject.BizObject">
+    <constructor>
+        <string value="Lookup" />
+        <string value="OA_Lookup" />
+        <string value="DefaultDataSource" />
+    </constructor>
+    <methods>
+        <method name="setPrimaryKey">
+            <list>
+                <string value="LookupID" />
+            </list>
+        </method>
+        <method name="setAutoKey">
+            <string value="LookupID" />
+        </method>
+        <method name="addProperty">
+            <list>
+                <BOPropertyXML boName="Lookup" property="LookupID" column="LookupID" javaType="java.lang.Integer" size="11" isNullable="false" />
+                <BOPropertyXML boName="Lookup" property="Lookup" column="Lookup" javaType="java.lang.String" size="50" isNullable="false" />
+                <BOPropertyXML boName="Lookup" property="Description" column="Description" javaType="java.lang.String" size="200" isNullable="false" />
+                <BOPropertyXML boName="Lookup" property="Value" column="LookupValue" javaType="java.lang.String" size="200" isNullable="true" />
+                <BOPropertyXML boName="Lookup" property="IsDefault" column="IsDefault" javaType="java.lang.Boolean"
+                               size="" isNullable="true"/>
+                <BOPropertyXML boName="Lookup" property="IsBlank" column="IsBlank" javaType="java.lang.Boolean" size=""
+                               isNullable="true"/>
+                <BOPropertyXML boName="Lookup" property="LookupGroupID" column="LookupGroupID" javaType="java.lang.Integer" size="11" isNullable="true" />
+            </list>
+        </method>
+    </methods>
+</singleton>

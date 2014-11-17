@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<singleton class="net.campusops.bizobject.bo.SimpleBizObject" interface="net.campusops.bizobject.BizObject">
+    <constructor>
+        <string value="UserInstance" />
+        <string value="OA_UserInstance" />
+        <string value="DefaultDataSource" />
+    </constructor>
+    <methods>
+        <method name="setPrimaryKey">
+            <list>
+                <string value="ID" />
+            </list>
+        </method>
+        <method name="setAutoKey">
+            <string value="ID" />
+        </method>
+        <method name="addProperty">
+            <list>
+                <BOPropertyXML boName="UserInstance" property="ID" column="ID" javaType="java.lang.Integer" size="11" isNullable="false" />
+                <BOPropertyXML boName="UserInstance" property="RecordType" column="RecordType" javaType="java.lang.Integer" size="1" isNullable="false" />
+                <BOPropertyXML boName="UserInstance" property="PublicationID" column="PublicationID" javaType="java.lang.Integer" size="11" isNullable="false" />
+                <BOPropertyXML boName="UserInstance" property="UserAccountID" column="UserAccountID" javaType="java.lang.Integer" size="11" isNullable="false" />
+                
+                <BOPropertyXML boName="UserInstance" property="EntryStartDate" column="EntryStartDate" javaType="java.util.Date" size="" isNullable="true" />
+                <BOPropertyXML boName="UserInstance" property="StatusID" column="StatusID" javaType="java.lang.Integer" size="11" isNullable="true" />
+                <BOPropertyXML boName="UserInstance" property="StatusDate" column="StatusDate" javaType="java.util.Date" size="" isNullable="true" />
+                <BOPropertyXML boName="UserInstance" property="StatusMessage" column="StatusMessage" javaType="java.lang.String" size="" isNullable="true" />
+                
+                <BOPropertyXML boName="UserInstance" property="Title" column="Title" javaType="java.lang.String" size="500" isNullable="true" />
+                <BOPropertyXML boName="UserInstance" property="Area" column="Area" javaType="java.lang.String" size="500" isNullable="true" />
+                <BOPropertyXML boName="UserInstance" property="Term" column="Term" javaType="java.lang.String" size="500" isNullable="true" />
+                
+                <BOPropertyXML boName="UserInstance" property="SubmissionHardDeadline" column="SubmissionHardDeadline" javaType="java.util.Date" size="" isNullable="true" />
+                <BOPropertyXML boName="UserInstance" property="SubmissionSoftDeadline" column="SubmissionSoftDeadline" javaType="java.util.Date" size="" isNullable="true" />                                
+                <BOPropertyXML boName="UserInstance" property="WarningDate" column="WarningDate" javaType="java.util.Date" size="" isNullable="true" />
+				<BOPropertyXML boName="UserInstance" property="CompletionHardDeadline" column="CompletionHardDeadline" javaType="java.util.Date" size="" isNullable="true" />
+                <BOPropertyXML boName="UserInstance" property="CompletionSoftDeadline" column="CompletionSoftDeadline" javaType="java.util.Date" size="" isNullable="true" />                
+                <BOPropertyXML boName="UserInstance" property="ExpectedDecisionDate" column="ExpectedDecisionDate" javaType="java.util.Date" size="" isNullable="true" />
+                
+                <BOPropertyXML boName="UserInstance" property="Fee" column="Fee" javaType="java.lang.Double" size="10" isNullable="true" />
+                <BOPropertyXML boName="UserInstance" property="FeePaymentID" column="FeePaymentID" javaType="java.lang.Integer" size="11" isNullable="true" />
+                <BOPropertyXML boName="UserInstance" property="PaymentGatewayAccountID" column="PaymentGatewayAccountID" javaType="java.lang.Integer" size="11" isNullable="true" />                
+                <BOPropertyXML boName="UserInstance" property="IsFullyLoaded" column="IsFullyLoaded" javaType="java.lang.Boolean" size="1" isNullable="true" />
+                
+                <BOPropertyXML boName="UserInstance" property="ClientID" column="ClientID" javaType="java.lang.String" size="50" isNullable="false" />                
+            </list>
+        </method>
+    </methods>
+</singleton>

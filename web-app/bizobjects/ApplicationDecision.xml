@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<singleton class="net.campusops.bizobject.bo.SimpleBizObject" interface="net.campusops.bizobject.BizObject">
+  <constructor>
+    <string value="ApplicationDecision" />
+    <string value="OA_ApplicationDecision" />
+    <string value="DefaultDataSource" />
+  </constructor>
+  <methods>
+    <method name="setPrimaryKey">
+      <list>
+        <string value="ID" />
+      </list>
+    </method>
+    <method name="setAutoKey">
+      <string value="ID" />
+    </method>
+    <method name="addProperty">
+      <list>
+		<BOPropertyXML boName="ApplicationDecision" property="ID" column="ID" javaType="java.lang.Integer" size="11" isNullable="false" />
+        <BOPropertyXML boName="ApplicationDecision" property="DecisionTypeID" column="DecisionTypeID" javaType="java.lang.Integer" size="11" isNullable="true" />
+        <BOPropertyXML boName="ApplicationDecision" property="DecisionLetterPath" column="DecisionLetterPath" javaType="java.lang.String" size="200" isNullable="true" />
+        <BOPropertyXML boName="ApplicationDecision" property="UserInstanceID" column="UserInstanceID" javaType="java.lang.Integer" size="11" isNullable="true" />
+        <BOPropertyXML boName="ApplicationDecision" property="IsRead" column="IsRead" javaType="java.lang.Boolean" size="" isNullable="true" />       
+        <BOPropertyXML boName="ApplicationDecision" property="EnrollmentDefinitionCode" column="EnrollmentDefinitionCode" javaType="java.lang.String" size="50" isNullable="true" />
+      </list>
+    </method>
+  </methods>
+</singleton>

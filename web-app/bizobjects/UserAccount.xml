@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<singleton class="net.campusops.bizobject.bo.SimpleBizObject" interface="net.campusops.bizobject.BizObject">
+  <constructor>
+    <string value="UserAccount" />
+    <string value="OA_UserAccount" />
+    <string value="DefaultDataSource" />
+  </constructor>
+  <methods>
+    <method name="setPrimaryKey">
+      <list>
+        <string value="ID" />
+      </list>
+    </method>
+    <method name="setAutoKey">
+      <string value="ID" />
+    </method>
+    <method name="addProperty">
+      <list>
+		<BOPropertyXML boName="UserAccount" property="ID" column="ID" javaType="java.lang.Integer" size="11" isNullable="false" />
+		
+        <BOPropertyXML boName="UserAccount" property="ClientID" column="ClientID" javaType="java.lang.String" size="50" isNullable="true" />
+        <BOPropertyXML boName="UserAccount" property="EmailAddress" column="EmailAddress" javaType="java.lang.String" size="80" isNullable="true" />
+        <BOPropertyXML boName="UserAccount" property="EmailVerifiedDate" column="EmailVerifiedDate" javaType="java.util.Date" size="" isNullable="true" />
+        <BOPropertyXML boName="UserAccount" property="EmailVerificationToken" column="EmailVerificationToken" javaType="java.lang.String" size="255" isNullable="true" />
+        <BOPropertyXML boName="UserAccount" property="CreateDate" column="CreateDate" javaType="java.util.Date" size="" isNullable="true" />
+        <BOPropertyXML boName="UserAccount" property="AccountStatus" column="AccountStatus" javaType="java.lang.Integer" size="4" isNullable="true" />
+        <BOPropertyXML boName="UserAccount" property="FirstName" column="FirstName" javaType="java.lang.String" size="100" isNullable="true" />
+        <BOPropertyXML boName="UserAccount" property="LastName" column="LastName" javaType="java.lang.String" size="100" isNullable="true" />
+        <BOPropertyXML boName="UserAccount" property="Password" column="Password" javaType="java.lang.String" size="255" isNullable="true" />
+        <BOPropertyXML boName="UserAccount" property="Salt" column="Salt" javaType="java.lang.String" size="100" isNullable="true" />
+        <BOPropertyXML boName="UserAccount" property="PasswordResetToken" column="PasswordResetToken" javaType="java.lang.String" size="255" isNullable="true" />
+        <BOPropertyXML boName="UserAccount" property="Role" column="Role" javaType="java.lang.String" size="100" isNullable="true" />
+          <!-- TODO: PageGroupID should be renamed? -->
+        <BOPropertyXML boName="UserAccount" property="PageGroupID" column="PageGroupID" javaType="java.lang.String" size="20" isNullable="true" />
+        <BOPropertyXML boName="UserAccount" property="RedirectUrl" column="RedirectUrl" javaType="java.lang.String" size="200" isNullable="true" />
+		
+      </list>
+    </method>
+  </methods>
+</singleton>
