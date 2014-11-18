@@ -33,7 +33,34 @@ class CrudService {
         action.clazz = "com.campus.service.RunnableAction"
         action.method = operation
         action.save()
+        if(!action.hasErrors()) {
+            saveParamGroups(action)
+        }
         return action
+    }
+
+    public List<ParamGroup> saveParamGroups(Action action) {
+        ParamGroup header = ParamGroup.findByNameAndActionID("Header", action.id) ?: new ParamGroup()
+        header.name = "Header"
+        header.actionID = action.id
+        header.recTypeID = 1
+        header.joinType = 1
+        header.save()
+
+        ParamGroup params = ParamGroup.findByNameAndActionID("Params", action.id) ?: new ParamGroup()
+        params.name = "Params"
+        params.actionID = action.id
+        params.recTypeID = 2
+        params.joinType = 0
+        params.save()
+
+        ParamGroup _return = ParamGroup.findByNameAndActionID("Return", action.id) ?: new ParamGroup()
+        _return.name = "Return"
+        _return.actionID = action.id
+        _return.recTypeID = 3
+        _return.joinType = 0
+        _return.save()
+        return [header, params, _return]
     }
 
     public Map resolveTestCases(String bizObject, List<String> operations) {
