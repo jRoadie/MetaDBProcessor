@@ -19,10 +19,7 @@ class CrudController {
 
     def process() {
         String bizObject = params.bizObject
-        List<String> operations = ["create", "read", "update", "delete"]
-        if(params.operation) {
-            operations = [params.operation]
-        }
+        List<String> operations = [params.operation]
         Service service = crudService.saveService(bizObject, operations)
         /*actions.each {
             crudService."$it"(params.bizObject)
