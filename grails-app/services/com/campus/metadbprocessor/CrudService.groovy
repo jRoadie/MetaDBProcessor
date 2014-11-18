@@ -1,17 +1,19 @@
 package com.campus.metadbprocessor
 
 import grails.transaction.Transactional
+import groovy.json.JsonSlurper
 
 @Transactional
 class CrudService {
 
     Service saveService(String bizObject, List<String> operations) {
-        resolveTestCases(bizObject, operations)
+        Map testcases = resolveTestCases(bizObject, operations)
         return null
     }
 
-    public void resolveTestCases(String bizObject, List<String> operations) {
-        operations.each { operation ->
+    public Map resolveTestCases(String bizObject, List<String> operations) {
+        Map<String, Map> testcases = [:]
+        operations.each { String operation ->
             File dir = new File("web-app/testcases/crud/${bizObject.toLowerCase()}")
             File testcase = new File(dir.path + "/${operation}.json")
             if(!dir.exists()) {
@@ -30,7 +32,9 @@ class CrudService {
                     }
                 }
             }
+            testcases[operation] = new JsonSlurper().parse(testcase)
         }
+        return testcases
     }
 
     def create(String bizObject) {
