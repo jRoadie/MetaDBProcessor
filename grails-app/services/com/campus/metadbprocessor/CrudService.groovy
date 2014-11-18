@@ -6,19 +6,34 @@ import groovy.json.JsonSlurper
 @Transactional
 class CrudService {
 
-    Service saveService(String bizObject, List<String> operations) {
+    public Service saveService(String bizObject, List<String> operations) {
         Map testcases = resolveTestCases(bizObject, operations)
-        operations.each { operation ->
-            Map testcase = testcases[operation]
-            Service service = Service.findByName(testcase.service) ?: new Service()
-            service.loader = "ola.module/loader.service"
-            service.name = testcase.service
-            service.description = "CRUD Operation"
-            service.clazz = "com.campus.service.crud.DataProcessor"
-            service.serviceParams = "{'dataName': '${bizObject}'}"
-            service.save()
+        String serviceName = testcases[operations.first()].service
+        Service service = Service.findByName(serviceName) ?: new Service()
+        service.loader = "ola.module/loader.service"
+        service.name = serviceName
+        service.description = "CRUD Operation"
+        service.clazz = "com.campus.service.crud.DataProcessor"
+        service.serviceParams = "{'dataName': '${bizObject}'}"
+        service.save()
+        if(!service.hasErrors()) {
+            operations.each { operation ->
+                Map testcase = testcases[operation]
+                saveAction(operation, service)
+            }
         }
-        return null
+        return service
+    }
+
+    public Action saveAction(String operation, Service service) {
+        Action action = Action.findByServiceIDAndMethod(service.id, operation) ?: new Action()
+        action.name = operation
+        action.description = operation + " " + service.name
+        action.serviceID = service.id
+        action.clazz = "com.campus.service.RunnableAction"
+        action.method = operation
+        action.save()
+        return action
     }
 
     public Map resolveTestCases(String bizObject, List<String> operations) {

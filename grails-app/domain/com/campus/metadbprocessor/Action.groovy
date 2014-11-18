@@ -9,13 +9,18 @@ class Action {
     String clazz
     String actionParams
     String method
-    Short txType
-    Boolean isActive
-    Integer oca
+    Short txType = 1
+    Boolean isActive = true
+    Integer oca = 1
 
     static mapping = {
         version false
         id column: "ActionID"
+    }
+
+    static constraints = {
+        overviewID(nullable: true)
+        actionParams(nullable: true)
     }
 
 }
