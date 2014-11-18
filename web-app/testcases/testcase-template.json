@@ -1,0 +1,14 @@
+{
+  "loader": "ola.module/loader.service",
+  "service": "${service}",
+  "action": "${action}",
+  "header": {
+    "ApiHeader": {
+      "port": 8080,
+      "UserID": "akterhossain.dsi@gmail.com",
+      "host": "localhost",
+      "client_id": "jrm"
+    }
+  },
+  "param": {}
+}
