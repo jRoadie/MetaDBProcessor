@@ -8,6 +8,16 @@ class CrudService {
 
     Service saveService(String bizObject, List<String> operations) {
         Map testcases = resolveTestCases(bizObject, operations)
+        operations.each { operation ->
+            Map testcase = testcases[operation]
+            Service service = Service.findByName(testcase.service) ?: new Service()
+            service.loader = "ola.module/loader.service"
+            service.name = testcase.service
+            service.description = "CRUD Operation"
+            service.clazz = "com.campus.service.crud.DataProcessor"
+            service.serviceParams = "{'dataName': '${bizObject}'}"
+            service.save()
+        }
         return null
     }
 
@@ -25,7 +35,7 @@ class CrudService {
                 testcase.withWriter { w ->
                     template.eachLine { line ->
                         if(line.indexOf('${service}') != -1) {
-                            w << line.replace('${service}', "ola.api.${bizObject.toLowerCase()}")
+                            w << line.replace('${service}', "ola.api.crud.${bizObject.toLowerCase()}")
                         } else {
                             w << line.replace('${action}', operation)
                         }

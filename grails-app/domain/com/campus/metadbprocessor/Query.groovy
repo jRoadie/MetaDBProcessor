@@ -4,7 +4,7 @@ class Query {
 
     String description
     String dataSource
-    String SQL
+    //String SQL
     String processorClass
     String clazz
     Boolean isActive

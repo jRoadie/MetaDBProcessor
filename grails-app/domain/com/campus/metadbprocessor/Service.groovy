@@ -2,11 +2,11 @@ package com.campus.metadbprocessor
 
 class Service {
 
-    String loader = "ola.module/loader.service"
+    String loader
     String name
-    String description = "CRUD Operation"
+    String description
     Integer overviewID
-    String clazz = "com.campus.service.crud.DataProcessor"
+    String clazz
     String serviceParams = "{'text':1}"
     Boolean isActive = false
     Integer oca = 1
