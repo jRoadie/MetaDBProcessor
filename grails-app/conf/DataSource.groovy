@@ -23,6 +23,14 @@ environments {
             dbCreate = "update" // one of 'create', 'create-drop', 'update', 'validate', ''
             url = "jdbc:mysql://localhost:3306/ola_meta_db_test?useUnicode=yes&characterEncoding=UTF-8"
         }
+        dataSource_mds_hir002 {
+            dbCreate = "update" // one of 'create', 'create-drop', 'update', 'validate', ''
+            driverClassName = "com.mysql.jdbc.Driver"
+            dialect = "org.hibernate.dialect.MySQL5InnoDBDialect"
+            url = "jdbc:mysql://mds-dev.ckalxfhzivms.us-east-1.rds.amazonaws.com:3306/mds-hir002?useUnicode=yes&characterEncoding=UTF-8"
+            username = "metadatausr"
+            password = "h#d4u*w!19"
+        }
     }
     test {
         dataSource {

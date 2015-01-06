@@ -1,0 +1,13 @@
+{
+  "OrganizationID": 11,
+  "ShortName": "UA",
+  "OrganizationTypeID": 2,
+  "Description": "Leading university in AZ offering undergraduate and graduate programs in arts and humanities,pure sciences, engineering, business, and medicine",
+  "InformalName": "Wroure",
+  "Name": "Wroure",
+  "PrincipalContactPersonID": 220,
+  "EmployeeCount": 39000,
+  "PaymentType":  "payment",
+  "AllowPaylate": 0,
+  "SchoolCodeID": 234
+}
